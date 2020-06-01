@@ -27,9 +27,14 @@ export const Container = styled.nav`
     transition: all 0.5s ease;
     position: relative;
     display: block;
+    color: #fff;
 
     svg {
       display: block;
+    }
+
+    img {
+      opacity: 0.2;
     }
   }
 
@@ -37,17 +42,20 @@ export const Container = styled.nav`
   li .active {
     background: #0ac5a8;
     right: 0;
+    color: #222;
+
+    img {
+      opacity: 1;
+    }
   }
 
   li:last-child a {
     margin-bottom: 0;
   }
+`;
 
-  li a {
-    color: #fff;
-  }
-
-  li:hover a {
-    color: #222;
-  }
+export const Icon = styled.img`
+  width: 28px;
+  height: 28px;
+  display: block;
 `;

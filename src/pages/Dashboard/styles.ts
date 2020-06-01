@@ -18,10 +18,6 @@ export const Container = styled.div`
   height: 100vh;
   color: #fff;
 
-  h1 {
-    animation: ${appear} 1s;
-  }
-
   .content {
     width: 1000px;
     height: 100vh;
@@ -33,10 +29,9 @@ export const Container = styled.div`
     padding: 2rem 0;
 
     h1 {
-      text-transform: uppercase;
       font-size: 64px;
       font-weight: 700;
-      font-family: 'Poppins', sans-serif;
+      animation: ${appear} 1s;
     }
 
     h2 {

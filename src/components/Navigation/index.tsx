@@ -2,7 +2,9 @@ import React from 'react';
 import { FiHome, FiGrid } from 'react-icons/fi';
 import { NavLink } from 'react-router-dom';
 
-import { Container } from './styles';
+import { Container, Icon } from './styles';
+
+import Finger from '../../assets/finger.svg';
 
 const Navigation: React.FC = () => {
   return (
@@ -14,24 +16,24 @@ const Navigation: React.FC = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink exact to="/basket">
-            <FiGrid size="28" />
+          <NavLink to="/explanation">
+            <Icon src={Finger} />
           </NavLink>
         </li>
         <li>
-          <a href="#Grid">
-            <FiGrid size="28" />
-          </a>
+          <NavLink to="/chart">
+            <Icon src={Finger} />
+          </NavLink>
         </li>
         <li>
-          <a href="#Grid">
-            <FiGrid size="28" />
-          </a>
+          <NavLink to="/form">
+            <Icon src={Finger} />
+          </NavLink>
         </li>
         <li>
-          <a href="#Grid">
-            <FiGrid size="28" />
-          </a>
+          <NavLink to="/basket">
+            <Icon src={Finger} />
+          </NavLink>
         </li>
       </ul>
     </Container>

@@ -1,16 +1,17 @@
 import styled from 'styled-components';
 
+import Image from '../../assets/addtocart.svg';
+
 export const Container = styled.div`
   width: 100%;
   height: 100vh;
-  background: #ebebeb;
+  background: #fff;
 
   .content {
     width: 1000px;
     height: 100vh;
-    background: url('https://cdn4.iconfinder.com/data/icons/longico/224/longico-26-512.png')
-      no-repeat center center;
-    background-size: 300px;
+    background: url(${Image}) no-repeat center center;
+    background-size: 600px;
     margin: 0 auto;
     padding: 2rem 0;
     position: relative;
